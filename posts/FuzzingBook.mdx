@@ -15,3 +15,14 @@ output matches the desired answer. The 'assert' keyword can be used, which retur
 You can use an 'epsilon' value to ensure your function's output remains below a specified value, which gets rid of any rounding inaccuracies. These tests 
 can be incorporated straight into the implementation as well to save space and time. However, you must be able to both formulate and afford these run-time
 checks. You can only test a finite amount of inputs, so there's a limit to the testing in that regard._
+
+## Chapter Two
+
+_The term "code coverage" refers to the ability to measure which parts of a program are being executed during a given test run, a process crucial for 
+attempting to cover as much code as possible using a test generator. A simple Python command, 'cgi_decode()', will allow you to take an encoded string 
+and decode it to its original form. You can derive tests using either Black-box testing, testing for specification, or White-box testing, testing for
+implementation. White-box testing covers the structural features of a code, such as statement coverage and branch coverage. Furthermore, this method of 
+testing keeps track of which code was executed so a programmer can then focus on writing tests to cover the uncovered code. Dynamic analysis can take 
+place using the command 'sys.settrace()'to track how execution proceeds while decoding. Defining a 'Coverage' object to not only keep track of which 
+lines are executed, but the function names as well, which is helpful when a program spans over many files. Along with Python, most other coding languages
+have their own methods of testing code coverage. We must also set up a results checker to ensure that 'cgi_decode()' is error-free._
