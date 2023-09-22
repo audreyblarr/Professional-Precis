@@ -26,3 +26,15 @@ testing keeps track of which code was executed so a programmer can then focus on
 place using the command 'sys.settrace()'to track how execution proceeds while decoding. Defining a 'Coverage' object to not only keep track of which 
 lines are executed, but the function names as well, which is helpful when a program spans over many files. Along with Python, most other coding languages
 have their own methods of testing code coverage. We must also set up a results checker to ensure that 'cgi_decode()' is error-free._
+
+## Chapter Three 
+
+_The input of a program can take many forms, including data prompted by user or read from a file. These inputs determine how a program behaves, including its 
+failures, so it's important to test each valid input, or a program's 'language'. Grammars are used to specify input languages formally, where a wide range of 
+the properties of an input language is expressed, as well as the syntactical structure of an input. Consisting of a 'start' symbol followed by a set of 
+expansion rules, grammers formally define the language in the sense that anything that can be derived from 'start' using the expansion rules is part of the 
+language. Grammers can even be recursive and cover full arithmetic expressions. Using a format based on strings and lists is the simplest way to write grammars 
+using Python. However, this method may be inefficient with its large number of search and replace operations, and it may not even produce a string. Grammars are 
+not limited to just formal languages; they can be used to produce natural language as well. Grammar-generated inputs can be used as seeds in mutation-based 
+fuzzing, where more complex constraints can be satisfied. Helper functions can be utilized in testing grammars, checking whether all used symbols are defined or 
+not, and whether or not they're reachable from the starting point._
